@@ -101,12 +101,14 @@ function App() {
       // setimage array to copy_image_array
       setImagearray(copy_image_array);
       setSearchWord("");
+      setImagePointer(0);
     }).catch((error) => {
       console.error(error);
     });
   }
   return (
     <div>
+      {/* <p>{imagepointer}</p> */}
       <Header />
       <SearchWord
         searchword={searchword}
